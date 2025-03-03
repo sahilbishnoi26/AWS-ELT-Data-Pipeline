@@ -12,8 +12,6 @@ This project demonstrates an end-to-end data pipeline using AWS services to proc
 5. **AWS Athena:** Runs SQL queries on processed data using Glue Catalog as a metadata store.
 6. **AWS QuickSight:** Provides data visualization and reporting.
 
-![alt text](https://github.com/sahilbishnoi26/Stock-Market-Data-Pipeline-GCP/blob/main/data/img4.png)
-
 ## Setup Instructions
 ### Prerequisites
 - AWS account with access to S3, Glue, Athena, Lambda, and QuickSight.
