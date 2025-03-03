@@ -6,10 +6,13 @@ This project demonstrates an end-to-end data pipeline using AWS services to proc
 ## Architecture
 1. **Data Source:** Raw structured data stored in AWS S3.
 2. **AWS Glue Crawler:** Identifies schema and creates metadata in the AWS Glue Data Catalog.
-3. **AWS Glue ETL Job:** Processes raw data, applies transformations, and stores results in S3 in a queryable format (e.g., Parquet).
-4. **AWS Athena:** Runs SQL queries on processed data using Glue Catalog as a metadata store.
-5. **AWS Lambda:** Automates Glue job execution and integrates with other AWS services.
+3. **AWS Lambda:** Transformed semi-structured json file into format that can be parsed by Glue crawler
+![alt text]()
+4. **AWS Glue ETL Job:** Processes raw data, applies transformations, and stores results in S3 in a queryable format (e.g., Parquet).
+5. **AWS Athena:** Runs SQL queries on processed data using Glue Catalog as a metadata store.
 6. **AWS QuickSight:** Provides data visualization and reporting.
+
+![alt text](https://github.com/sahilbishnoi26/Stock-Market-Data-Pipeline-GCP/blob/main/data/img4.png)
 
 ## Setup Instructions
 ### Prerequisites
@@ -52,7 +55,5 @@ This project demonstrates an end-to-end data pipeline using AWS services to proc
 - Generate real-time dashboards in QuickSight.
 - Extend the pipeline with additional AWS services as needed.
 
-## License
-This project is open-source under the MIT License.
 
 
