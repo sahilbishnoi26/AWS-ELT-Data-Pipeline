@@ -12,7 +12,7 @@ This project demonstrates an end-to-end data pipeline using AWS services to proc
 3. **AWS Lambda:** Transformed json file into format that can be parsed by Glue crawler to create a strutured table that can be queried by Athena.
 ![alt text](https://github.com/sahilbishnoi26/AWS-ELT-Data-Pipeline/blob/main/data/img2.png)
 ![alt text](https://github.com/sahilbishnoi26/AWS-ELT-Data-Pipeline/blob/main/data/img3.png)
-5. **AWS Glue ETL Job:** Processes raw data, applies transformations, and stores results in S3 in a queryable format (e.g., Parquet).
+5. **AWS Glue ETL Job:** Spark job processes raw data, applies transformations, and stores results in S3 in a queryable format (e.g., Parquet).
 6. **AWS Athena:** Runs SQL queries on processed data using Glue Catalog as a metadata store.
 7. **AWS Lambda:** Automates Glue job execution and integrates with other AWS services.
 8. **AWS QuickSight:** Provides data visualization and reporting.
