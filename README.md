@@ -3,14 +3,18 @@
 ## Overview
 This project demonstrates an end-to-end data pipeline using AWS services to process structured data efficiently. The pipeline extracts data from S3, transforms it using AWS Glue, stores results in an Athena-accessible format, and visualizes insights in QuickSight. Lambda functions automate workflow execution.
 
+![alt text](https://github.com/sahilbishnoi26/AWS-ELT-Data-Pipeline/blob/main/data/img0.png)
+
 ## Architecture
 1. **Data Source:** Raw structured data stored in AWS S3.
 2. **AWS Glue Crawler:** Identifies schema and creates metadata in the AWS Glue Data Catalog.
+![alt text](https://github.com/sahilbishnoi26/AWS-ELT-Data-Pipeline/blob/main/data/img1.png)
 3. **AWS Lambda:** Transformed semi-structured json file into format that can be parsed by Glue crawler
-![alt text]()
-4. **AWS Glue ETL Job:** Processes raw data, applies transformations, and stores results in S3 in a queryable format (e.g., Parquet).
-5. **AWS Athena:** Runs SQL queries on processed data using Glue Catalog as a metadata store.
-6. **AWS QuickSight:** Provides data visualization and reporting.
+![alt text](https://github.com/sahilbishnoi26/AWS-ELT-Data-Pipeline/blob/main/data/img2.png)
+![alt text](https://github.com/sahilbishnoi26/AWS-ELT-Data-Pipeline/blob/main/data/img3.png)
+5. **AWS Glue ETL Job:** Processes raw data, applies transformations, and stores results in S3 in a queryable format (e.g., Parquet).
+6. **AWS Athena:** Runs SQL queries on processed data using Glue Catalog as a metadata store.
+7. **AWS QuickSight:** Provides data visualization and reporting.
 
 ## Setup Instructions
 ### Prerequisites
